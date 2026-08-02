@@ -1,0 +1,14 @@
+# macOS Finder metadata
+.DS_Store
+
+# Xcode user-specific state
+xcuserdata/
+*.xcuserstate
+
+# Local build products
+DerivedData/
+build/
+*.xcarchive
+
+# Swift Package Manager state
+.swiftpm/
