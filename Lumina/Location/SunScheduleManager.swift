@@ -3,7 +3,9 @@ import CoreLocation
 import Combine
 
 @MainActor
-final class SunScheduleManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+// CLLocationManager is created on the main actor and delivers callbacks on that
+// run loop. Older SDKs do not express that isolation in the delegate protocol.
+final class SunScheduleManager: NSObject, ObservableObject, @preconcurrency CLLocationManagerDelegate {
     static let shared = SunScheduleManager()
 
     private let locationManager = CLLocationManager()
