@@ -14,6 +14,19 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  website:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check website files and JavaScript
+        run: |
+          python3 scripts/check_website.py
+          node --check website/script.js
   check:
     # Public standard runners are free. Skip rather than bill if visibility changes.
     if: github.event.repository.private == false

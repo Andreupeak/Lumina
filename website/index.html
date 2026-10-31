@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#111112">
+  <meta name="description" content="A little light, right when you need it. Lumina is a free, open-source Mac app for keyboard backlight control, sunset schedules, time slots, and idle dimming.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lumina — Your keyboard. In the right light.">
+  <meta property="og:description" content="Free, open-source keyboard backlight control for your Mac. Follow the sun, set a routine, or choose your own brightness.">
+  <meta property="og:url" content="https://andreupeak.github.io/Lumina/">
+  <meta property="og:image" content="https://andreupeak.github.io/Lumina/assets/lumina-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://andreupeak.github.io/Lumina/">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="assets/keyboard-studio.webp">
+  <script src="script.js" defer></script>
+  <title>Lumina — Keyboard backlight control for Mac</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#" aria-label="Lumina home"><img src="assets/app-icon.png" width="42" height="42" alt=""><span>Lumina</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Inside the app</a>
+      <a class="github-link" href="https://github.com/Andreupeak/Lumina">GitHub <span aria-hidden="true">↗</span></a>
+      <a class="nav-download" href="#download">Get Lumina <span aria-hidden="true">↓</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> FREE & OPEN SOURCE · PUBLIC BETA</p>
+        <h1 id="hero-title">Your keyboard.<br>In the <span>right light.</span></h1>
+        <p class="hero-description">A little Mac app for the lights beneath your keys. Choose a brightness, follow the sun, or let your daily routine decide.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#download">Download free beta <span aria-hidden="true">↓</span></a><a class="text-link" href="#features">See what it does <span aria-hidden="true">↘</span></a></div>
+        <p class="hero-note">macOS 14+ · Supported backlit Mac keyboards<br>Universal Intel & Apple silicon download · Not Apple-notarized</p>
+      </div>
+      <figure class="hero-visual">
+        <div class="hero-halo" aria-hidden="true"></div>
+        <img class="hero-keyboard" src="assets/keyboard-studio.webp" width="1536" height="1024" alt="Illustration of a dark laptop keyboard with soft white backlighting, lit by warm evening light.">
+        <div class="hero-app"><div class="menu-bar-example" aria-hidden="true"><span>◐</span><span>⌁</span><span class="selected">☀</span></div><img src="assets/app-system.png" width="760" height="830" alt="Lumina’s actual System Control panel, with keyboard brightness at 50 percent and an Auto-Brightness switch."></div>
+        <figcaption>Real app interface. Illustrative device rendering.</figcaption>
+      </figure>
+    </section>
+
+    <div class="intro-strip wrap" aria-label="At a glance"><span>A small home in your menu bar.</span><span>No accounts. No subscriptions.</span><span>Yours to use. Yours to inspect.</span></div>
+
+    <section class="features wrap section" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><div><p class="eyebrow">LESS ADJUSTING. MORE DOING.</p><h2 id="features-title">Light that fits your day.</h2></div><p>For late work, early starts, and all the moments you step away.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card sun-card">
+          <div class="feature-copy"><span class="feature-number">01 / SUN CYCLE</span><h3>Sun goes down.<br>Keys light up.</h3><p>Pick your night brightness. Lumina applies it from sunset to sunrise and keeps the backlight off during daylight.</p></div>
+          <div class="sun-arc" aria-hidden="true"><span>☀</span><i></i><span>☾</span></div>
+          <a class="screenshot-link feature-shot" href="assets/app-sun-cycle.png" data-screenshot="Sun Cycle" aria-label="Enlarge the Sun Cycle screenshot"><img src="assets/app-sun-cycle.png" width="760" height="1252" loading="lazy" alt="Sun Cycle with a sample active window of 16:40 to 6:59, sunrise and sunset times, and 50 percent night brightness."></a>
+        </article>
+        <article class="feature-card slots-card">
+          <div class="feature-copy"><span class="feature-number">02 / TIME SLOTS</span><h3>Your hours.<br>Your brightness.</h3><p>Make up to three daily slots, each with its own brightness. Evening focus can flow into a dimmer late-night session.</p></div>
+          <div class="slot-decoration" aria-hidden="true"><span>18:00 <i></i> 22:00</span><span>22:00 <i></i> 01:00</span></div>
+          <a class="screenshot-link feature-shot" href="assets/app-time-slots.png" data-screenshot="Time Slots" aria-label="Enlarge the Time Slots screenshot"><img src="assets/app-time-slots.png" width="760" height="1252" loading="lazy" alt="Two example daily time slots: Evening focus from 18:00 to 22:00 at 50 percent, and Late reading from 22:00 to 01:00 at 30 percent."></a>
+        </article>
+        <article class="feature-card idle-card">
+          <div class="feature-copy"><span class="feature-number">03 / INACTIVITY TIMEOUT</span><h3>Step away.<br>Lights out.</h3><p>Set a timeout to turn the backlight off while you’re idle. Return to your keyboard or trackpad to resume the current mode.</p></div>
+          <div class="timer-decoration" aria-hidden="true"><span>00</span><b>:</b><span>30</span><small>SECONDS OF QUIET</small></div>
+          <a class="screenshot-link feature-shot idle-shot" href="assets/app-idle.png" data-screenshot="Inactivity Timeout" aria-label="Enlarge the inactivity timer screenshot"><img src="assets/app-idle.png" width="760" height="950" loading="lazy" alt="The real Inactivity Timeout controls, enabled with native menus set to zero minutes and thirty seconds."></a>
+        </article>
+      </div>
+      <p class="figure-note">Actual Lumina screenshots with sample settings. Click any screenshot to enlarge. Sun times depend on your date, time zone, and chosen location.</p>
+    </section>
+
+    <section class="day-section section" aria-labelledby="day-title">
+      <div class="wrap day-layout">
+        <div class="day-copy"><p class="eyebrow">SUN CYCLE, EXPLAINED</p><h2 id="day-title">From daylight<br>to your night light.</h2><p>During the day, the keyboard backlight stays off. After sunset, your chosen night brightness takes over. An inactivity timeout can turn it off while you’re away.</p><p class="subtle">Try this example day. This illustration explains the behavior; it doesn’t control your Mac.</p></div>
+        <div class="day-demo" data-mode="evening">
+          <div class="demo-topline"><span class="demo-label">A DAY WITH LUMINA</span><span class="demo-pill" id="demo-time">After sunset</span></div>
+          <div class="keyboard-demo" aria-hidden="true"><div class="keyboard-grid" id="keyboard-grid"></div><div class="keyboard-trackpad"></div></div>
+          <div class="demo-status" aria-live="polite"><span class="status-dot"></span><strong id="demo-brightness">Backlight at 50%</strong><span id="demo-context">Your chosen nighttime level.</span></div>
+          <div class="demo-options" role="group" aria-label="Choose a moment in the example day"><button type="button" data-demo="day" aria-pressed="false">☀ <span>Daylight</span></button><button type="button" data-demo="evening" aria-pressed="true">☾ <span>Evening</span></button><button type="button" data-demo="away" aria-pressed="false">◷ <span>Stepped away</span></button></div>
+          <p class="demo-caption">Example: Sun Cycle + 50% night brightness + 30-second idle timeout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="inside wrap section" id="screenshots" aria-labelledby="inside-title">
+      <div class="inside-copy"><p class="eyebrow">SMALL APP. USEFUL DETAILS.</p><h2 id="inside-title">Everything’s<br>right here.</h2><p>Open Lumina from the sun or moon in your menu bar. A compact panel puts brightness, schedules, and timers within reach.</p>
+        <div class="tour-tabs" role="tablist" aria-label="Explore Lumina’s controls"><button id="tab-system" role="tab" aria-controls="tour-panel" aria-selected="true" data-tour="system">System Control <span aria-hidden="true">↗</span></button><button id="tab-solar" role="tab" aria-controls="tour-panel" aria-selected="false" tabindex="-1" data-tour="solar">Sun Cycle <span aria-hidden="true">↗</span></button><button id="tab-slots" role="tab" aria-controls="tour-panel" aria-selected="false" tabindex="-1" data-tour="slots">Time Slots <span aria-hidden="true">↗</span></button><button id="tab-idle" role="tab" aria-controls="tour-panel" aria-selected="false" tabindex="-1" data-tour="idle">Inactivity Timeout <span aria-hidden="true">↗</span></button></div>
+        <div class="tour-description" role="tabpanel" id="tour-panel" aria-labelledby="tab-system" tabindex="0"><h3 id="tour-title">Choose the light you like.</h3><p id="tour-description">Set a fixed brightness in 2% steps, or switch on Auto-Brightness to follow your Mac’s ambient light sensor.</p><p class="tour-detail" id="tour-detail">Quick brightness previews last three seconds, then your current mode resumes.</p></div>
+      </div>
+      <figure class="tour-figure"><div class="tour-frame"><a class="screenshot-link" id="tour-image-link" href="assets/app-system.png" data-screenshot="System Control" aria-label="Enlarge the current app screenshot"><img id="tour-image" src="assets/app-system.png" width="760" height="830" loading="lazy" alt="Actual System Control panel with a 50 percent brightness slider and Auto-Brightness switch."></a></div><figcaption id="tour-caption">Actual app screenshot · System Control · Sample settings</figcaption></figure>
+    </section>
+
+    <section class="privacy wrap section" aria-labelledby="privacy-title">
+      <div class="privacy-heading"><div class="privacy-symbol" aria-hidden="true">⌂</div><div><p class="eyebrow">AT HOME ON YOUR MAC</p><h2 id="privacy-title">Your light.<br>Your location. Your choice.</h2></div></div>
+      <div class="privacy-grid"><div><h3>No account to make.</h3><p>No analytics, ads, telemetry, or automatic update checks. Your preferences stay on your Mac.</p></div><div><h3>Location is optional.</h3><p>Fixed brightness and time slots need none. For Sun Cycle, enter coordinates manually or choose Mac Location.</p></div><div><h3>You choose what connects.</h3><p>Manual coordinates and solar calculations work offline. The optional IP Estimate contacts ipapi.co only after confirmation, sharing your public IP.</p></div></div>
+      <p class="privacy-footnote">Saved coordinates are rounded to 0.1° and stored locally without encryption. Apple’s Location Services may use the network. Idle detection reads elapsed time since input; it doesn’t record what you type. <a href="https://github.com/Andreupeak/Lumina/blob/main/PRIVACY.md">Read the privacy details <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section class="download-section section" id="download" aria-labelledby="download-title">
+      <div class="wrap download-layout"><div class="download-copy"><img src="assets/app-icon.png" width="84" height="84" loading="lazy" alt="Lumina app icon"><p class="eyebrow">LITTLE APP. LOVELY LIGHT.</p><h2 id="download-title">Make yourself<br>comfortable.</h2><p>Free to download. Open source under the MIT license. No subscription or account required.</p><div class="release-notice"><strong>Public beta · Not Apple-notarized</strong><p>macOS may block the first launch. Read the installation steps and compatibility notes before downloading.</p></div><a class="button button-primary download-dmg" href="https://github.com/Andreupeak/Lumina/releases/download/v1.0.0-beta.1/Lumina-1.0.0-beta.1.dmg">Download for Mac <span aria-hidden="true">↓</span></a><p class="download-meta">v1.0.0-beta.1 · macOS 14+ · Intel & Apple silicon</p><div class="download-alternatives"><a href="https://github.com/Andreupeak/Lumina/releases/download/v1.0.0-beta.1/Lumina-1.0.0-beta.1.zip">ZIP download</a><span aria-hidden="true">·</span><a href="https://github.com/Andreupeak/Lumina/releases/tag/v1.0.0-beta.1">Release notes & checksums</a></div></div>
+        <div class="install-guide" id="install"><h3>From download to your menu bar.</h3><ol><li><span>01</span><div><h4>Move Lumina to Applications.</h4><p>Open the DMG, drag Lumina into Applications, and eject the disk image. Quit any older Lumina first.</p></div></li><li><span>02</span><div><h4>Open the app you downloaded.</h4><p>If macOS blocks it, verify the official release and decide whether you trust it. Apple explains the per-app <strong>Privacy & Security → Open Anyway</strong> option. <a href="https://support.apple.com/en-us/102445">Read Apple’s guidance ↗</a></p></div></li><li><span>03</span><div><h4>Look for the sun or moon.</h4><p>Click Lumina in your menu bar, finish setup, and choose System Control or Periodic mode. Keep Lumina running for automation and idle timeouts.</p></div></li></ol><p class="install-footnote">Keep macOS security protections enabled. A managed Mac may disallow unnotarized apps. <a href="https://github.com/Andreupeak/Lumina/blob/main/docs/INSTALL.md">Full installation, update & uninstall guide ↗</a></p></div>
+      </div>
+    </section>
+
+    <section class="faq wrap section" aria-labelledby="faq-title"><div class="section-heading"><div><p class="eyebrow">BEFORE YOU INSTALL</p><h2 id="faq-title">A few useful things to know.</h2></div></div><div class="faq-list">
+      <details><summary>Will it work with my Mac?</summary><p>Lumina targets macOS 14 or later and includes Intel and Apple silicon versions in one download. It needs a backlit keyboard supported by Apple’s private CoreBrightness framework. Real hardware checks so far cover one Apple silicon Mac; Intel, other Mac models, older macOS versions, and external keyboards need compatibility reports. This is a beta, so hardware support isn’t guaranteed.</p></details>
+      <details><summary>What is CoreBrightness? Is it a risk?</summary><p>CoreBrightness is an Apple system framework that Lumina uses to talk to supported keyboard lighting. Its private interface isn’t a stable public API: a macOS update can change it. Lumina checks the interface before using it and reports unsupported hardware, but that cannot guarantee future compatibility. The app runs without App Sandbox, needs no administrator or Accessibility access, and is distributed outside the Mac App Store. <a href="https://github.com/Andreupeak/Lumina/blob/main/SECURITY.md">Read the security notes.</a></p></details>
+      <details><summary>Does it change my display or the color of my keys?</summary><p>Lumina controls keyboard backlight brightness. It doesn’t change screen brightness, screen color temperature, or the color of your keyboard LEDs. The warm and indigo lighting in the device illustration is artistic scene lighting.</p></details>
+      <details><summary>How do schedules and timeouts work together?</summary><p>Sun Cycle turns the backlight off in daylight and applies your night setting from sunset to sunrise. Time Slots allow up to three non-overlapping daily windows, including windows that cross midnight; the backlight is off outside them. A slot’s nonzero idle timeout overrides the global timer. A slot timeout of 00:00 uses the global setting; a global timeout of 00:00 disables global idle dimming.</p></details>
+      <details><summary>What happens when I quit or restart my Mac?</summary><p>Keep Lumina running for its automation and idle timeouts to apply. A normal quit restores the brightness and ambient setting captured at launch. A crash or force quit may prevent that restoration; you can use macOS’s keyboard brightness controls. Lumina doesn’t install a login item or an updater, so reopen it yourself after restarting.</p></details>
+      <details><summary>Why is the download not Apple-notarized?</summary><p>This release uses a local integrity signature without a personal Developer ID certificate. Notarized Developer ID distribution normally requires a paid Apple Developer membership. The project currently uses a free distribution route, so expect a first-open warning. A matching checksum confirms download integrity; it isn’t an independent verification of the publisher or an Apple malware review. You can also <a href="https://github.com/Andreupeak/Lumina#build-and-run">build from the source.</a></p></details>
+    </div></section>
+  </main>
+
+  <footer class="site-footer wrap"><div><a class="wordmark" href="#"><img src="assets/app-icon.png" width="32" height="32" alt=""><span>Lumina</span></a><p>A little light, right when you need it.</p></div><div class="footer-links"><a href="https://github.com/Andreupeak/Lumina">Source code</a><a href="https://github.com/Andreupeak/Lumina/issues">Report a bug</a><a href="https://github.com/Andreupeak/Lumina/blob/main/PRIVACY.md">Privacy</a><a href="https://github.com/Andreupeak/Lumina/blob/main/LICENSE">MIT license</a></div><p class="footer-note">Independent open-source project. Not affiliated with or endorsed by Apple. App screenshots use sample settings; the device image is AI-generated. This website uses no analytics, cookies, or external fonts. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s hosting privacy policy</a> applies to normal web requests.</p></footer>
+
+  <dialog id="screenshot-dialog" aria-labelledby="screenshot-dialog-title"><div class="dialog-header"><h2 id="screenshot-dialog-title">App screenshot</h2><button type="button" id="close-screenshot" aria-label="Close screenshot">Close <span aria-hidden="true">×</span></button></div><img id="dialog-image" src="assets/app-system.png" alt=""><p>Actual Lumina interface · Sample settings · Window title bar cropped</p></dialog>
+</body>
+</html>

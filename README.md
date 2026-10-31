@@ -1,7 +1,16 @@
 # Lumina
 
+[![Lumina: Your keyboard. In the right light.](website/assets/lumina-social.png)](https://andreupeak.github.io/Lumina/)
+
 A small macOS menu-bar app for controlling your MacBook's keyboard backlight.
 Set a brightness, follow the sun, or choose the hours when your keyboard should light up.
+
+**[Explore the visual guide and screenshots →](https://andreupeak.github.io/Lumina/)**
+
+[![Sun Cycle, daily Time Slots, and Inactivity Timeout, illustrated with actual Lumina screenshots.](website/assets/lumina-features.png)](https://andreupeak.github.io/Lumina/#features)
+
+The screenshots use sample settings. The device image is an illustration; Lumina controls
+keyboard brightness, not the color of the LEDs or your screen.
 
 Lumina uses Apple's **private CoreBrightness framework**. Hardware support can change
 with macOS updates. It runs without App Sandbox and is not suitable for Mac App Store
