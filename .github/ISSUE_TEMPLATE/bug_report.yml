@@ -1,0 +1,25 @@
+name: Bug report
+description: Report an app behavior or compatibility problem.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include coordinates, IP addresses, serial numbers, or credentials. Use SECURITY.md for vulnerabilities.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: App version or commit, macOS version, and Mac model (no serial number).
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the selected mode and timer settings, plus expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional screenshots with personal information removed.

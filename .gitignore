@@ -8,7 +8,34 @@ xcuserdata/
 # Local build products
 DerivedData/
 build/
+dist/
 *.xcarchive
 
 # Swift Package Manager state
 .swiftpm/
+.build/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+Local.xcconfig
+
+# Distribution and test output
+*.dmg
+*.zip
+*.dSYM/
+*.xcresult/
+*.app/
+*.log
+*.crash
+*.ips
+__pycache__/
+*.pyc
